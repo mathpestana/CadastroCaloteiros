@@ -152,3 +152,24 @@
     border: 3px solid #f05454;
   }
   
+  /* Responsividade */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .form-section {
+      gap: 8px;
+    }
+  
+    li .info {
+      max-width: 100%;
+      font-size: 0.85em;
+      margin-right: 0;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  }
