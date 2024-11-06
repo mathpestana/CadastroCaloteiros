@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+
+  .container {
+    width: 95%;
+    max-width: 700px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #f05454;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #a0a0a0;
+  }
+  
+
+  .formulario {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  
+  .formulario label {
+    font-weight: bold;
+    color: #e0e0e0;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 0.9em;
+  }
+  
+  .formulario button#botaoCadastro {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #f05454;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulario button#botaoCadastro:hover {
+    background-color: #d14040;
+  }
+  
+  /* Lista de caloteiros */
+  h2 {
+    color: #f05454;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .lista-caloteiros {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-caloteiros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+  }
+  
+  .lista-caloteiros .info {
+    max-width: 70%;
+    font-size: 0.9em;
+    color: #c0c0c0;
+  }
+  
+  .lista-caloteiros button {
+    padding: 8px 12px;
+    background-color: #f05454;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .lista-caloteiros button:hover {
+    background-color: #d14040;
+  }
+  
+  .lista-caloteiros button.editar {
+    background-color: #4caf50;
+  }
+  
+  .lista-caloteiros button.editar:hover {
+    background-color: #43a047;
+  }
+
+  /* Imagem do Seu Madruga */
+  .imagem-seu-madruga {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .imagem-seu-madruga img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #f05454;
+  }
+  
