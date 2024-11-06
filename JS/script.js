@@ -21,7 +21,7 @@ class Caloteiro {
   calcularValorAtualizado() {
     const agora = new Date();
     const minutosPassados = Math.floor((agora - this.dataEmprestimo) / 60000);
-    const jurosPorMinuto = 0.05;
+    const jurosPorMinuto = 0.01;
     return (this.valor + minutosPassados * jurosPorMinuto).toFixed(2);
   }
 
@@ -41,7 +41,7 @@ function renderizarLista() {
   caloteiros.forEach((caloteiro, indice) => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <span class="info">${caloteiro.getDetalhes()} - Com Juros: R$${caloteiro.calcularValorAtualizado()}</span>
+      <span class="info">${caloteiro.getDetalhes()} - Total com Juros: R$${caloteiro.calcularValorAtualizado()}</span>
       <button onclick="editarCaloteiro(${indice})">Editar</button>
       <button onclick="excluirCaloteiro(${indice})">Excluir</button>
     `;
