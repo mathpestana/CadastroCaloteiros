@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Caloteiros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+     <!-- Imagem do Seu Madruga -->
+     <div class="imagem-seu-madruga">
+        <img src="seu_madruga.jpg" alt="Seu Madruga" />
+    </div>
+    
+    <h1>Cadastro de Caloteiros</h1>
+    <p>Registre os amigos que "esqueceram" de te pagar... com juros acumulando por minuto!</p>
+
+    <div class="formulario">
+      <label for="nome">Nome do Caloteiro:</label>
+      <input type="text" id="nome" placeholder="Ex: Tonhão oreia seca Enrolado">
+      
+      <label for="descricao">Descrição da Dívida:</label>
+      <input type="text" id="descricao" placeholder="Ex: Pizza, Uber, rolê...">
+      
+      <label for="valor">Valor Emprestado (R$):</label>
+      <input type="number" id="valor" placeholder="Ex: 171.00">
+      
+      <label for="dataEmprestimo">Data do Empréstimo:</label>
+      <input type="date" id="dataEmprestimo">
+
+      <button id="botaoCadastro">Cadastrar Caloteiro</button>
+    </div>
+
+    <h2>Lista de Caloteiros</h2>
+    <ul id="listaCaloteiros"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
